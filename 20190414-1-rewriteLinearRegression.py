@@ -33,7 +33,7 @@ class linearRegression:
             batch_idxs = np.random.choice(len(x_list), size=50)
             x_list_batch = np.array(x_list)[batch_idxs]
             t_list_batch = np.array(t_list)[batch_idxs]
-            loss = self.loss(x_list_batch, t_list_batch,i)
+            self.loss(x_list_batch, t_list_batch,i)
 
 
 def getTrainData(w, b,size=100):
